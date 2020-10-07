@@ -1,0 +1,15 @@
+[package]
+name = "hurriname"
+version = "0.1.0"
+authors = ["calmdown13 <callum@callumdownie.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.3.18"
+rand = "0.7.3"
+strfmt = "0.1.6"
+uuid = { version = "0.8.1", features = ["serde", "v4"] }
+confy = "0.4.0"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5.6"
+chrono = { version = "0.4", features = ["unstable-locales", "serde"] }
