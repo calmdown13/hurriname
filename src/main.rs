@@ -74,4 +74,4 @@ fn main() {
     let formatted_name = format_name(name, args.format);
     println!("{}", formatted_name);
 }
- 
+
