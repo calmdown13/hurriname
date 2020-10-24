@@ -11,7 +11,7 @@ struct Cli {
     #[structopt(short, long, default_value = "")]
     letter: String,
     #[structopt(short, long,  default_value = "any")]
-    gender: String,
+    sex: String,
     #[structopt(short, long,  default_value = "{name}")]
     format: String,
     #[structopt(short, long)]
@@ -34,8 +34,8 @@ fn filter_by_letter(names: Vec<String>, letter: String) -> Vec<String> {
     names_filt
 }
 
-fn get_names(cfg: config::Config, gender: String, letter: String) -> Vec<String> {
-    let mut names = match &*gender {
+fn get_names(cfg: config::Config, sex: String, letter: String) -> Vec<String> {
+    let mut names = match &*sex {
         "male" => cfg.male_names,
         "female" => cfg.female_names,
         _ => append(cfg.male_names, cfg.female_names),
@@ -69,7 +69,7 @@ fn format_name(name: String, format: String) -> String {
 fn main() {
     let args = Cli::from_args();
     let cfg = config::get_config();
-    let names = get_names(cfg, args.gender, args.letter);
+    let names = get_names(cfg, args.sex, args.letter);
     let name = get_name(&names, args.capitalize);
     let formatted_name = format_name(name, args.format);
     println!("{}", formatted_name);
