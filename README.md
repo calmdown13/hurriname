@@ -1,10 +1,10 @@
 ![build-linux action status](https://github.com/calmdown13/hurriname/workflows/Continuous%20Integration/badge.svg)
 
 # Hurriname
-"What was different about v11.4.16 again?", dicussing different software versions can be a real of pain. If you're lucky the developers might remember the particularities of each version, however, meetings are still going to be a jumbled mess of numbers. Inspired by hurricane naming conventions, hurriname is a simple command line tool to randomly generate human names for versioning.
+"What was different about v11.4.16 again?", discussing different software versions can be a real pain. If you're lucky the developers might remember the particularities of each version, however, meetings are still going to be a jumbled mess of numbers. Inspired by hurricane naming conventions, hurriname is a simple command line tool to randomly generate human names for versioning.
 
 ## Installation
-To install on linux or mac:
+To install on Linux or Mac:
 ```
 $ curl https://raw.githubusercontent.com/calmdown13/hurriname/main/init.sh -sSf | sudo sh
 ```
@@ -15,7 +15,7 @@ To generate a random name simply invoke hurriname:
 $ hurriname
 tamantha
 ```
-To generate a capitlized name:
+To generate a capitalized name:
 ```
 $ hurriname --capitalize
 Navana
@@ -66,3 +66,15 @@ The names used in hurriname are parsed from the US Social Security Administratio
 
 ### Name Counts
 ![image not available](https://raw.githubusercontent.com/calmdown13/hurriname/main/docs/name_counts.png "name counts")
+
+## Configuration
+If you're not happy with the default names, you can configure them yourself. The first time hurriname is invoked a config file will be created (if not already present). On Linux the config file will be located at `/home/${USER}/.config/hurriname/hurriname.toml`, on Mac it will be at `/Users/${USER}/Library/Preferences/rs.hurriname/hurriname.toml`. The configuration will have the following format:
+```toml
+male_names = [
+    'Aaban',
+]
+female_names = [
+    'Aabha',
+]
+```
+To change the names used by hurriname, simply change them here and on next invocation hurriname will use the updated names.
