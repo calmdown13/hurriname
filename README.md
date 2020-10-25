@@ -3,6 +3,12 @@
 # Hurriname
 "What was different about v11.4.16 again?", dicussing different software versions can be a real of pain. If you're lucky the developers might remember the particularities of each version, however, meetings are still going to be a jumbled mess of numbers. Inspired by hurricane naming conventions, hurriname is a simple command line tool to randomly generate human names for versioning.
 
+## Installation
+To install on linux or mac:
+```
+$ curl https://raw.githubusercontent.com/calmdown13/hurriname/main/init.sh -sSf | sudo sh
+```
+
 ## Usage
 To generate a random name simply invoke hurriname:
 ```
