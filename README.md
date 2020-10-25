@@ -1,6 +1,6 @@
 ![build-linux action status](https://github.com/calmdown13/hurriname/workflows/Continuous%20Integration/badge.svg)
 
-# Hurriname
+# 🌀 Hurriname
 "What was different about v11.4.16 again?", discussing different software versions can be a real pain. If you're lucky the developers might remember the particularities of each version, however, meetings are still going to be a jumbled mess of numbers. Inspired by hurricane naming conventions, hurriname is a simple command line tool to randomly generate human names for versioning.
 
 ## Installation
