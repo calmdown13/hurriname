@@ -57,3 +57,6 @@ hurricane-anyea-2020102515455
 
 ## Names
 The names used in hurriname are parsed from the US Social Security Administration's Baby Names [dataset](https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data). In total hurriname contains 99444 unique names, 62670 female names and 36774 male names (the US population must be more creative when naming their daughters). Names were judged to be female if more females had that name than males, and vice versa.
+
+### Name Counts
+![image not available](https://github.com/calmdown13/hurriname/docs/name_counts.png "name counts")
