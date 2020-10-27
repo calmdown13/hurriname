@@ -97,6 +97,7 @@ jobs:
       - name: Package
         if: startsWith(github.ref, 'refs/tags/')
         run: |
+          echo $GITHUB_REF
           $VERSION = $GITHUB_REF -replace '.*\/'
           $TARGET="x86_64-pc-windows-msvc"
           mkdir hurriname-${VERSION}-${TARGET}
