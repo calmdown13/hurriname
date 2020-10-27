@@ -1,6 +1,6 @@
 [package]
 name = "hurriname"
-version = "1.0.4"
+version = "1.0.5"
 authors = ["calmdown13 <callum@callumdownie.com>"]
 edition = "2018"
 

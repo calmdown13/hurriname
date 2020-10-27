@@ -96,10 +96,8 @@ jobs:
 
       - name: Package
         if: startsWith(github.ref, 'refs/tags/')
-        env:
-          REF: ${{ github.ref }}
         run: |
-          $VERSION = $REF -replace '.*\/'
+          $VERSION=${env:GITHUB_REF} -replace '.*\/'
           $TARGET="x86_64-pc-windows-msvc"
           mkdir hurriname-${VERSION}-${TARGET}
           mv target/${TARGET}/release/hurriname.exe hurriname-${VERSION}-${TARGET}/hurriname.exe
