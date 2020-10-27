@@ -8,6 +8,7 @@ To install on Linux or Mac:
 ```
 $ curl https://raw.githubusercontent.com/calmdown13/hurriname/main/init.sh -sSf | sudo sh
 ```
+For Windows users, you can download the latest windows archive from [here](https://github.com/calmdown13/hurriname/releases/).
 
 ## Usage
 To generate a random name simply invoke hurriname:

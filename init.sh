@@ -11,7 +11,7 @@
 
 set -u
 
-VERSION="v1.0.5"
+VERSION="v1.1.0"
 UPDATE_ROOT="https://github.com/calmdown13/hurriname/releases/download/${VERSION}"
 
 main() {
